@@ -102,8 +102,8 @@ werden ausschließlich lokal auf deinem Gerät gespeichert. Sawvy überträgt di
 oder fremde Server. Sawvy benötigt kein Konto und keine Registrierung.
 </p>
 <p>
-Nur in den folgenden, klar abgegrenzten Fällen werden Daten übertragen: beim Kauf von Sawvy Pro
-(Abschnitt 3), bei Absturzberichten mit deiner Einwilligung (Abschnitt 4), wenn du freiwillig Feedback
+Nur in den folgenden, klar abgegrenzten Fällen werden Daten übertragen: zur Prüfung und Abwicklung von
+Käufen (Abschnitt 3), bei Absturzberichten mit deiner Einwilligung (Abschnitt 4), wenn du freiwillig Feedback
 sendest (Abschnitt 5) und zur Absicherung dieser Feedback-Funktion (Abschnitt 6).
 </p>
 <p>
@@ -119,6 +119,11 @@ Der Kauf von Sawvy Pro wird über den <strong>Google Play Store</strong> abgewic
 (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Zahlungsdaten erhalten wir nicht.
 </p>
 <p>
+Damit Sawvy Pro nach einem Kauf zuverlässig freigeschaltet ist, fragt die App beim Start den Kaufstatus ab –
+auch wenn du nichts kaufst. Die dafür von Google bereitgestellte Play-Billing-Bibliothek übermittelt dabei
+technische Diagnosedaten an Google.
+</p>
+<p>
 Zur Prüfung und Verwaltung deines Kaufs nutzen wir <strong>RevenueCat</strong>
 (RevenueCat, Inc., 633 Tasman St, San Leandro, CA 94577, USA). Verarbeitet werden dabei:
 der Kaufstatus bzw. Kaufverlauf für Sawvy Pro, der Kaufnachweis (Purchase Token) von Google Play und
@@ -127,7 +132,7 @@ Name, E-Mail-Adresse oder Zahlungsdaten erhält RevenueCat von Sawvy nicht.
 </p>
 <ul>
   <li><strong>Zweck:</strong> Prüfung, ob ein gültiger Kauf vorliegt, und Freischaltung von Sawvy Pro, auch nach Neuinstallation („Kauf wiederherstellen").</li>
-  <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Erfüllung des Kaufvertrags).</li>
+  <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Erfüllung des Kaufvertrags), soweit du Sawvy Pro kaufst oder gekauft hast; für die Abfrage des Kaufstatus ohne Kauf Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der korrekten Freischaltung).</li>
   <li><strong>Speicherdauer:</strong> solange es zur Verwaltung deines Kaufs erforderlich ist; darüber hinaus nur, soweit gesetzliche Aufbewahrungspflichten bestehen.</li>
   <li><strong>Drittlandübermittlung:</strong> RevenueCat verarbeitet Daten in den USA. Die Übermittlung erfolgt auf Grundlage des EU-US Data Privacy Framework bzw. von EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO).</li>
 </ul>
@@ -207,7 +212,7 @@ von Google Play angezeigt. Deine Bewertung geht direkt an Google Play; Sawvy erh
 <h3>8. Übersicht der verarbeiteten Daten</h3>
 <ul>
   <li><strong>Nur lokal auf dem Gerät:</strong> Projekte, Bretter, Teile, Lagerbestand, Einstellungen</li>
-  <li><strong>Beim Kauf (RevenueCat, Google Play):</strong> Kaufstatus, Kaufnachweis, anonyme Nutzerkennung</li>
+  <li><strong>Beim App-Start und beim Kauf (RevenueCat, Google Play):</strong> Kaufstatus, Kaufnachweis, anonyme Nutzerkennung, technische Diagnosedaten der Play-Billing-Bibliothek</li>
   <li><strong>Nur mit Einwilligung (Crashlytics):</strong> Absturzprotokolle, technische Gerätedaten, Installationskennung</li>
   <li><strong>Nur wenn du Feedback sendest (Firestore):</strong> Nachrichtentext, Zeitpunkt, App-Version</li>
   <li><strong>Zur Absicherung des Feedbacks (App Check):</strong> Integritätsprüfung durch Google Play</li>
@@ -256,7 +261,7 @@ Situation ergeben, jederzeit widersprechen (Art. 21 DSGVO).
 <p>
 <strong>Beschwerderecht:</strong> Du kannst dich bei einer Datenschutz-Aufsichtsbehörde beschweren
 (Art. 77 DSGVO). Für uns zuständig ist die Sächsische Datenschutz- und Transparenzbeauftragte,
-Devrientstraße 5, 01067 Dresden.
+Maternistraße 17, 01067 Dresden.
 </p>
 <p>
 Anfragen richtest du an <a href="mailto:gdapps@proton.me">gdapps@proton.me</a>.
@@ -289,7 +294,7 @@ on your device. Sawvy does not transmit this content to its own or any third-par
 no account and no registration.
 </p>
 <p>
-Data is transmitted only in the following clearly defined cases: when you purchase Sawvy Pro (Section 3),
+Data is transmitted only in the following clearly defined cases: to verify and process purchases (Section 3),
 for crash reports with your consent (Section 4), when you voluntarily send feedback (Section 5), and to
 protect that feedback feature (Section 6).
 </p>
@@ -306,6 +311,11 @@ Purchases of Sawvy Pro are processed through the <strong>Google Play Store</stro
 (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland). We do not receive payment data.
 </p>
 <p>
+To reliably unlock Sawvy Pro after a purchase, the app checks the purchase status on startup – even if you
+do not buy anything. The Play Billing Library provided by Google for this purpose transmits technical
+diagnostic data to Google.
+</p>
+<p>
 To verify and manage your purchase, we use <strong>RevenueCat</strong>
 (RevenueCat, Inc., 633 Tasman St, San Leandro, CA 94577, USA). The following data is processed: the purchase
 status or purchase history for Sawvy Pro, the purchase token from Google Play, and a randomly generated,
@@ -314,7 +324,7 @@ name, email address or payment data from Sawvy.
 </p>
 <ul>
   <li><strong>Purpose:</strong> verifying a valid purchase and unlocking Sawvy Pro, including after reinstallation ("Restore purchase").</li>
-  <li><strong>Legal basis:</strong> Art. 6(1)(b) GDPR (performance of the purchase contract).</li>
+  <li><strong>Legal basis:</strong> Art. 6(1)(b) GDPR (performance of the purchase contract) where you buy or have bought Sawvy Pro; for checking the purchase status without a purchase, Art. 6(1)(f) GDPR (legitimate interest in correct unlocking).</li>
   <li><strong>Retention:</strong> as long as necessary to manage your purchase; beyond that only where statutory retention obligations apply.</li>
   <li><strong>Transfer to third countries:</strong> RevenueCat processes data in the USA. The transfer is based on the EU-U.S. Data Privacy Framework or EU Standard Contractual Clauses (Art. 46(2)(c) GDPR).</li>
 </ul>
@@ -393,7 +403,7 @@ Your rating goes directly to Google Play; Sawvy receives no data from it.
 <h3>8. Overview of processed data</h3>
 <ul>
   <li><strong>Only on your device:</strong> projects, boards, parts, stock, settings</li>
-  <li><strong>When purchasing (RevenueCat, Google Play):</strong> purchase status, purchase token, anonymous user identifier</li>
+  <li><strong>On app start and when purchasing (RevenueCat, Google Play):</strong> purchase status, purchase token, anonymous user identifier, technical diagnostic data from the Play Billing Library</li>
   <li><strong>Only with consent (Crashlytics):</strong> crash logs, technical device data, installation identifier</li>
   <li><strong>Only when you send feedback (Firestore):</strong> message text, time, app version</li>
   <li><strong>To protect feedback (App Check):</strong> integrity check by Google Play</li>
@@ -439,7 +449,7 @@ you may object to this processing at any time on grounds relating to your partic
 <p>
 <strong>Right to lodge a complaint:</strong> You may lodge a complaint with a data protection supervisory
 authority (Art. 77 GDPR). The authority responsible for us is the Saxon Data Protection and Transparency
-Commissioner (Sächsische Datenschutz- und Transparenzbeauftragte), Devrientstraße 5, 01067 Dresden, Germany.
+Commissioner (Sächsische Datenschutz- und Transparenzbeauftragte), Maternistraße 17, 01067 Dresden, Germany.
 </p>
 <p>
 Please send requests to <a href="mailto:gdapps@proton.me">gdapps@proton.me</a>.
