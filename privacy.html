@@ -1,127 +1,459 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="de">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.6">
-  <style type="text/css">
-    body {background-color: #f2eee6}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.2px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115}
-    p.p3 {margin: 0.0px 0.0px 16.0px 0.0px; font: 10.2px 'Courier New'; color: #29211a; -webkit-text-stroke: #29211a}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Georgia; color: #0c0b0b; -webkit-text-stroke: #0c0b0b; min-height: 14.0px}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.6px Georgia; color: #100e0d; -webkit-text-stroke: #100e0d}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    p.p9 {margin: 0.0px 0.0px 16.0px 0.0px; font: 11.6px Georgia; color: #100e0d; -webkit-text-stroke: #100e0d}
-    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Georgia; color: #383838; -webkit-text-stroke: #383838; min-height: 14.0px}
-    p.p13 {margin: 0.0px 0.0px 16.0px 0.0px; font: 11.6px Georgia; color: #0000dc; -webkit-text-stroke: #100e0d}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.6px 'Courier New'; color: #29211a; -webkit-text-stroke: #29211a}
-    li.li10 {margin: 0.0px 0.0px 8.0px 0.0px; font: 11.6px Georgia; color: #100e0d; -webkit-text-stroke: #100e0d}
-    li.li11 {margin: 0.0px 0.0px 8.0px 0.0px; font: 12.0px Georgia; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; background-color: #ffffff}
-    span.s3 {text-decoration: underline ; font-kerning: none; color: #3e2115; -webkit-text-stroke: 0px #3e2115}
-    span.s4 {font: 12.0px Georgia; font-kerning: none; -webkit-text-stroke: 0px #000000}
-    span.s5 {font: 11.6px 'Times New Roman'; font-kerning: none}
-    span.s6 {font: 11.6px Georgia; text-decoration: underline ; font-kerning: none; color: #0000dc; -webkit-text-stroke: 0px #100e0d}
-    span.s7 {-webkit-text-stroke: 0px #000000}
-    span.s8 {font: 12.0px Times; font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
-    span.s9 {font-kerning: none; color: #100e0d}
-    span.s10 {text-decoration: underline ; font-kerning: none; color: #0000dc}
-    ul.ul1 {list-style-type: disc}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sawvy – Datenschutzerklärung / Privacy Policy</title>
+<style>
+  :root {
+    --text: #2A1A0E;
+    --muted: #6B5A4A;
+    --accent: #8B5E3C;
+    --bg: #F2EAE0;
+    --card: #FFFFFF;
+    --border: #E6DACA;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 16px 64px;
+  }
+  header { margin-bottom: 24px; }
+  .brand {
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    font-size: 14px;
+  }
+  h1 { font-size: 28px; line-height: 1.25; margin: 8px 0 4px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  nav { margin: 16px 0 0; font-size: 15px; }
+  nav a { margin-right: 16px; }
+  section.lang {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 8px 24px 24px;
+    margin-top: 24px;
+  }
+  h2 {
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin: 24px 0 0;
+  }
+  h3 { font-size: 18px; margin: 28px 0 8px; }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  .hint {
+    border-left: 3px solid var(--accent);
+    padding: 4px 12px;
+    color: var(--muted);
+  }
+  footer { color: var(--muted); font-size: 13px; margin-top: 32px; text-align: center; }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #F2EAE0;
+      --muted: #BFAE9C;
+      --accent: #D9A77A;
+      --bg: #1B140F;
+      --card: #251C15;
+      --border: #3A2D22;
+    }
+  }
+</style>
 </head>
 <body>
-<p class="p1"><span class="s1">SAWVY</span></p>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 24.0px Georgia; color: #0c0b0b; -webkit-text-stroke: #0c0b0b"><span class="s1">Datenschutzerklärung<br>
-Privacy Policy</span></h1>
-<p class="p3"><span class="s1">Stand / Last updated: Juni 2026 · David Gersdorf</span></p>
-<p class="p4"><span class="s1">DEUTSCH</span></p>
-<p class="p4"><span class="s1">ENGLISH</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>1. VERANTWORTLICHER</b><b></b></span></h2>
-<p class="p7"><span class="s2">David Gersdorf</span><span class="s1"><br>
-</span><span class="s2">Seminarstr. 7</span><span class="s1"><br>
-</span><span class="s2">01067 Dresden</span><span class="s1"><br>
-</span><span class="s2">E-Mail: <a href="mailto:gdapps@proton.me"><span class="s3">gdapps@proton.me</span></a></span></p>
-<p class="p8"><span class="s1"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>2. GRUNDSATZ: LOKALE DATENSPEICHERUNG</b><b></b></span></h2>
-<p class="p9"><span class="s1">Sawvy speichert alle von dir eingegebenen Projektdaten – Projekte, Bretter, Teile und Einstellungen – ausschließlich lokal auf deinem Gerät. </span><span class="s4">Diese Inhalte werden von Sawvy nicht an eigene oder fremde Server übertragen.</span></p>
-<p class="p9"><span class="s1">Zusätzlich kann Android die App-Daten – abhängig von deinen Systemeinstellungen – über die Funktion „Automatische Sicherung" in dein persönliches Google Drive sichern. Diese Sicherung erfolgt durch das Betriebssystem, nicht durch Sawvy: sie liegt in deinem eigenen Google-Konto, zählt nicht auf dein Drive-Kontingent und ist bei eingerichteter Bildschirmsperre Ende-zu-Ende-verschlüsselt, sodass auch Google die Inhalte nicht lesen kann. Du kannst die Funktion jederzeit systemweit unter Einstellungen </span><span class="s5">→</span><span class="s1">Google </span><span class="s5">→</span><span class="s1"> Sicherung deaktivieren.</span></p>
-<p class="p9"><span class="s1">Mit deiner Einwilligung nutzen wir Firebase Crashlytics zur Absturzerkennung – Details, welche Daten dabei verarbeitet werden und wie du widersprechen kannst, findest du in Abschnitt 4.</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>3. IN-APP-KÄUFE (REVENUECAT)</b><b></b></span></h2>
-<p class="p9"><span class="s1">Für den Kauf von Sawvy Pro nutzen wir den Dienst <b>RevenueCat</b> (RevenueCat, Inc., 633 Tasman St, San Leandro, CA 94577, USA). RevenueCat verarbeitet Kaufdaten ausschließlich zur Validierung und Verwaltung von In-App-Käufen über den Google Play Store.</span></p>
-<p class="p9"><span class="s1">Datenschutzerklärung von RevenueCat: <a href="https://www.revenuecat.com/privacy"><span class="s6">revenuecat.com/privacy</span></a></span></p>
-<p class="p9"><span class="s1">Der Kaufvorgang wird über den <b>Google Play Store</b> abgewickelt: <a href="https://policies.google.com/privacy"><span class="s6">policies.google.com/privacy</span></a></span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>4. ABSTURZBERICHTE (FIREBASE CRASHLYTICS)</b><b></b></span></h2>
-<p class="p9"><span class="s1">Sawvy nutzt <b>Firebase Crashlytics</b> (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland), um Programmabstürze zu erkennen und die App-Stabilität zu verbessern.</span></p>
-<p class="p9"><span class="s1">Crashlytics ist standardmäßig <b>deaktiviert</b> und wird erst aktiv, wenn du beim ersten Start der App ausdrücklich zustimmst. Bei Zustimmung werden folgende technische Daten an Google-Server übertragen: Gerätemodell, Betriebssystemversion, App-Version und Fehlerprotokolle (Stack-Traces). Deine Projektinhalte (Maße, Bezeichnungen, Bretter, Teile) werden dabei <b>nicht</b> erfasst.</span></p>
-<p class="p9"><span class="s1">Du kannst deine Entscheidung jederzeit in den App-Einstellungen unter „Absturzberichte teilen" ändern.</span></p>
-<p class="p9"><span class="s1">Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy"><span class="s6">policies.google.com/privacy</span></a></span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>5. ERHOBENE DATEN IM ÜBERBLICK</b><b></b></span></h2>
-<ul class="ul1">
-  <li class="li10"><span class="s7"><b></b></span><span class="s1"><b>Lokal gespeichert:</b> Projektdaten, Bretter, Teile, Einstellungen (Einheit, Klingenbreite)</span></li>
-  <li class="li10"><span class="s7"><b></b></span><span class="s1"><b>Durch RevenueCat:</b> Kaufstatus für Sawvy Pro (keine persönlichen Inhalte)</span></li>
-  <li class="li10"><span class="s7"><b></b></span><span class="s1"><b>Mit Einwilligung über Firebase Crashlytics:</b> Gerätemodell, Betriebssystemversion, App-Version, Fehlerprotokolle</span></li>
-  <li class="li11"><span class="s7"></span><span class="s1">Über Android Auto Backup (systemseitig, abschaltbar): Projektdaten und Einstellungen im Google Drive des Nutzers</span></li>
-  <li class="li10"><span class="s7"><b></b></span><span class="s1"><b>Nicht erhoben:</b> Name, E-Mail, Standort, Kontakte</span></li>
+<main>
+
+<header>
+  <div class="brand">SAWVY</div>
+  <h1>Datenschutzerklärung / Privacy Policy</h1>
+  <p class="meta">Stand / Last updated: Oktober 2026 · David Gersdorf, DaveO Studio</p>
+  <nav><a href="#de">Deutsch</a><a href="#en">English</a></nav>
+</header>
+
+<!-- ============================ DEUTSCH ============================ -->
+<section class="lang" id="de" lang="de">
+<h2>DEUTSCH</h2>
+
+<h3>1. Verantwortlicher</h3>
+<p>
+David Gersdorf, DaveO Studio<br>
+Seminarstraße 7<br>
+01067 Dresden<br>
+Deutschland<br>
+E-Mail: <a href="mailto:gdapps@proton.me">gdapps@proton.me</a>
+</p>
+
+<h3>2. Grundsatz: Deine Projekte bleiben auf dem Gerät</h3>
+<p>
+Alle Projektdaten, die du in Sawvy eingibst – Projekte, Bretter, Teile, Lagerbestand und Einstellungen –
+werden ausschließlich lokal auf deinem Gerät gespeichert. Sawvy überträgt diese Inhalte nicht an eigene
+oder fremde Server. Sawvy benötigt kein Konto und keine Registrierung.
+</p>
+<p>
+Nur in den folgenden, klar abgegrenzten Fällen werden Daten übertragen: beim Kauf von Sawvy Pro
+(Abschnitt 3), bei Absturzberichten mit deiner Einwilligung (Abschnitt 4), wenn du freiwillig Feedback
+sendest (Abschnitt 5) und zur Absicherung dieser Feedback-Funktion (Abschnitt 6).
+</p>
+<p>
+Unabhängig davon kann Android die App-Daten – abhängig von deinen Systemeinstellungen – über die
+Funktion „Automatische Sicherung" in deinem persönlichen Google-Konto sichern. Diese Sicherung erfolgt
+durch das Betriebssystem, nicht durch Sawvy, und unterliegt den Bedingungen von Google. Du kannst sie
+systemweit unter Einstellungen → Google → Sicherung deaktivieren.
+</p>
+
+<h3>3. In-App-Käufe (Google Play und RevenueCat)</h3>
+<p>
+Der Kauf von Sawvy Pro wird über den <strong>Google Play Store</strong> abgewickelt
+(Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Zahlungsdaten erhalten wir nicht.
+</p>
+<p>
+Zur Prüfung und Verwaltung deines Kaufs nutzen wir <strong>RevenueCat</strong>
+(RevenueCat, Inc., 633 Tasman St, San Leandro, CA 94577, USA). Verarbeitet werden dabei:
+der Kaufstatus bzw. Kaufverlauf für Sawvy Pro, der Kaufnachweis (Purchase Token) von Google Play und
+eine zufällig erzeugte, anonyme Nutzerkennung, die RevenueCat der App-Installation zuordnet.
+Name, E-Mail-Adresse oder Zahlungsdaten erhält RevenueCat von Sawvy nicht.
+</p>
+<ul>
+  <li><strong>Zweck:</strong> Prüfung, ob ein gültiger Kauf vorliegt, und Freischaltung von Sawvy Pro, auch nach Neuinstallation („Kauf wiederherstellen").</li>
+  <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Erfüllung des Kaufvertrags).</li>
+  <li><strong>Speicherdauer:</strong> solange es zur Verwaltung deines Kaufs erforderlich ist; darüber hinaus nur, soweit gesetzliche Aufbewahrungspflichten bestehen.</li>
+  <li><strong>Drittlandübermittlung:</strong> RevenueCat verarbeitet Daten in den USA. Die Übermittlung erfolgt auf Grundlage des EU-US Data Privacy Framework bzw. von EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO).</li>
 </ul>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>6. BERECHTIGUNGEN DER APP</b><b></b></span></h2>
-<ul class="ul1">
-  <li class="li10"><span class="s7"><b></b></span><span class="s1"><b>INTERNET:</b> Für die Validierung von In-App-Käufen über RevenueCat und Google Play sowie – bei Zustimmung – die Übertragung von Absturzberichten via Firebase Crashlytics.</span></li>
+<p>
+Datenschutzerklärung von RevenueCat: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a><br>
+Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>
+</p>
+
+<h3>4. Absturzberichte (Firebase Crashlytics)</h3>
+<p>
+Sawvy nutzt <strong>Firebase Crashlytics</strong> (Google Ireland Limited, Gordon House, Barrow Street,
+Dublin 4, Irland), um Programmabstürze zu erkennen und die Stabilität der App zu verbessern.
+</p>
+<p>
+Crashlytics ist standardmäßig <strong>deaktiviert</strong> und wird erst aktiv, wenn du beim ersten Start
+der App ausdrücklich zustimmst. Bei Zustimmung werden im Fall eines Absturzes folgende technische Daten
+übertragen:
+</p>
+<ul>
+  <li>Fehlerprotokolle (Stack-Traces) und der Zustand der App zum Zeitpunkt des Absturzes</li>
+  <li>Gerätemodell, Betriebssystemversion, App-Version und weitere technische Gerätedaten (z. B. Arbeitsspeicher, Speicherplatz)</li>
+  <li>eine zufällig erzeugte Installationskennung (Crashlytics-Installations-UUID und Firebase-Installations-ID), mit der gezählt wird, wie viele Installationen von einem Fehler betroffen sind</li>
 </ul>
-<p class="p9"><span class="s1">Weitere Berechtigungen (Kamera, Standort, Kontakte etc.) werden nicht angefordert.</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>7. DATENLÖSCHUNG</b><b></b></span></h2>
-<p class="p9"><span class="s1">Alle lokal gespeicherten Daten werden gelöscht, wenn du die App deinstallierst. Eine manuelle Löschung einzelner Projekte ist jederzeit in der App möglich. Ist die automatische Sicherung von Android aktiv, bleibt eine Kopie in deinem Google Drive erhalten und wird bei einer Neuinstallation zurückgespielt; diese Sicherung löschst du unter Einstellungen </span><span class="s5">→</span><span class="s1"> Google </span><span class="s5">→</span><span class="s1"> Sicherung.</span></p>
-<p class="p9"><span class="s1">Deine Einwilligung zu Firebase Crashlytics kannst du jederzeit in den App-Einstellungen widerrufen.</span></p>
-<p class="p9"><span class="s1">Für Daten, die RevenueCat gespeichert hat, wende dich an </span><span class="s8">gdapps@proton.me</span><span class="s1"> oder direkt an RevenueCat.</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>8. DEINE RECHTE (DSGVO)</b><b></b></span></h2>
-<p class="p9"><span class="s1">Du hast das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung deiner Daten sowie das Recht auf Datenübertragbarkeit (Art. 15–20 DSGVO). Soweit Daten nur mit deiner Einwilligung verarbeitet werden (Crashlytics), hast du außerdem das Recht, diese Einwilligung jederzeit mit Wirkung für die Zukunft zu widerrufen (Art. 7 Abs. 3 DSGVO).</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>9. ÄNDERUNGEN</b><b></b></span></h2>
-<p class="p9"><span class="s1">Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen. Das Datum der letzten Aktualisierung ist oben angegeben.</span></p>
-<p class="p12"><span class="s1"></span><br></p>
-<p class="p5"><span class="s1"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>1. CONTROLLER</b><b></b></span></h2>
-<p class="p7"><span class="s2">David Gersdorf</span><span class="s1"><br>
-</span><span class="s2">Seminarstr. 7</span><span class="s1"><br>
-</span><span class="s2">01067 Dresden, Germany</span><span class="s1"><br>
-</span><span class="s2">Email: <a href="mailto:gdapps@proton.me"><span class="s3">gdapps@proton.me</span></a></span></p>
-<p class="p8"><span class="s1"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>2. PRINCIPLE: LOCAL DATA STORAGE</b><b></b></span></h2>
-<p class="p9"><span class="s1">Sawvy stores all project data you enter – projects, boards, parts, and settings – exclusively on your device. </span><span class="s4">Sawvy does not transmit this content to its own or any third-party servers.</span></p>
-<p class="p9"><span class="s1">In addition, depending on your system settings, Android may back up the app's data to your personal Google Drive via the "Automatic Backup" feature. This backup is performed by the operating system, not by Sawvy: it resides in your own Google account, does not count against your Drive quota, and is end-to-end encrypted when a screen lock is set, so not even Google can read its contents. You can disable the feature system-wide at any time under Settings </span><span class="s5">→</span><span class="s1"> Google </span><span class="s5">→</span><span class="s1"> Backup.</span></p>
-<p class="p9"><span class="s1">With your consent, we use Firebase Crashlytics for crash detection – see Section 4 for details on what data is processed and how to opt out.</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>3. IN-APP PURCHASES (REVENUECAT)</b><b></b></span></h2>
-<p class="p9"><span class="s1">For Sawvy Pro purchases, we use <b>RevenueCat</b> (RevenueCat, Inc., 633 Tasman St, San Leandro, CA 94577, USA). RevenueCat processes purchase data solely to validate and manage in-app purchases via the Google Play Store.</span></p>
-<p class="p9"><span class="s1">RevenueCat Privacy Policy: <a href="https://www.revenuecat.com/privacy"><span class="s6">revenuecat.com/privacy</span></a></span></p>
-<p class="p9"><span class="s1">Purchases are processed through the <b>Google Play Store</b>: <a href="https://policies.google.com/privacy"><span class="s6">policies.google.com/privacy</span></a></span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>4. CRASH REPORTING (FIREBASE CRASHLYTICS)</b><b></b></span></h2>
-<p class="p9"><span class="s1">Sawvy uses <b>Firebase Crashlytics</b> (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland) to detect app crashes and improve stability.</span></p>
-<p class="p9"><span class="s1">Crashlytics is <b>disabled by default</b> and only becomes active once you explicitly consent on first app launch. If you consent, the following technical data is sent to Google servers: device model, OS version, app version, and error logs (stack traces). Your project content (measurements, labels, boards, parts) is <b>not</b> collected.</span></p>
-<p class="p9"><span class="s1">You can change your decision at any time in the app settings under "Share crash reports".</span></p>
-<p class="p13"><span class="s9">Google Privacy Policy: <a href="https://policies.google.com/privacy"><span class="s10">policies.google.com/privacy</span></a></span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>5. DATA OVERVIEW</b><b></b></span></h2>
-<ul class="ul1">
-  <li class="li10"><span class="s7"><b></b></span><span class="s1"><b>Stored locally:</b> Project data, boards, parts, settings (unit, blade width)</span></li>
-  <li class="li10"><span class="s7"><b></b></span><span class="s1"><b>Via RevenueCat:</b> Purchase status for Sawvy Pro (no personal content)</span></li>
-  <li class="li10"><span class="s7"><b></b></span><span class="s1"><b>With consent via Firebase Crashlytics:</b> Device model, OS version, app version, error logs</span></li>
-  <li class="li11"><span class="s7"></span><span class="s1">Via Android Auto Backup (system-level, can be disabled): project data and settings in the user's own Google Drive</span></li>
-  <li class="li10"><span class="s7"><b></b></span><span class="s1"><b>Not collected:</b> Name, email, location, contacts</span></li>
+<p>
+Deine Projektinhalte (Maße, Bezeichnungen, Bretter, Teile) werden dabei <strong>nicht</strong> erfasst.
+</p>
+<ul>
+  <li><strong>Rechtsgrundlage:</strong> deine Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG.</li>
+  <li><strong>Widerruf:</strong> jederzeit in den App-Einstellungen unter „Absturzberichte teilen", mit Wirkung für die Zukunft.</li>
+  <li><strong>Speicherdauer:</strong> Google speichert Absturzdaten und die zugehörigen Kennungen nach eigenen Angaben 90 Tage und beginnt danach mit der Löschung.</li>
+  <li><strong>Drittlandübermittlung:</strong> Google kann Daten auch in den USA verarbeiten. Google LLC ist nach dem EU-US Data Privacy Framework zertifiziert.</li>
 </ul>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>6. APP PERMISSIONS</b><b></b></span></h2>
-<ul class="ul1">
-  <li class="li10"><span class="s7"><b></b></span><span class="s1"><b>INTERNET:</b> Used to validate in-app purchases via RevenueCat and Google Play, and – if you consent – to transmit crash reports via Firebase Crashlytics.</span></li>
+
+<h3>5. Feedback (Firebase Cloud Firestore)</h3>
+<p>
+Über „Feedback senden" kannst du uns freiwillig eine Nachricht schicken. Dafür nutzen wir
+<strong>Cloud Firestore</strong> von Google als Auftragsverarbeiter. Gespeichert werden ausschließlich:
+</p>
+<ul>
+  <li>dein Nachrichtentext</li>
+  <li>der Zeitpunkt des Eingangs</li>
+  <li>die App-Version</li>
 </ul>
-<p class="p9"><span class="s1">No other permissions (camera, location, contacts, etc.) are requested.</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>7. DATA DELETION</b><b></b></span></h2>
-<p class="p9"><span class="s1">All locally stored data is deleted when you uninstall the app. Individual projects can be deleted within the app at any time. If Android's automatic backup is active, a copy remains in your Google Drive and will be restored on reinstallation; you can delete that backup under Settings </span><span class="s5">→</span><span class="s1"> Google </span><span class="s5">→</span><span class="s1"> Backup. You can withdraw your Firebase Crashlytics consent at any time in the app settings.</span></p>
-<p class="p9"><span class="s1">For data stored by RevenueCat, contact </span><span class="s8">gdapps@proton.me</span><span class="s1"> or RevenueCat directly.</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>8. YOUR RIGHTS (GDPR)</b><b></b></span></h2>
-<p class="p9"><span class="s1">You have the right to access, rectify, erase, and restrict the processing of your data, as well as the right to data portability (Art. 15–20 GDPR). Where data is processed based on your consent (Crashlytics), you also have the right to withdraw that consent at any time with future effect (Art. 7(3) GDPR).</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.6px 'Courier New'; color: #3e2115; -webkit-text-stroke: #3e2115"><span class="s1"><b>9. CHANGES</b><b></b></span></h2>
-<p class="p9"><span class="s1">We reserve the right to update this privacy policy as needed. The date of the last update is shown above.</span></p>
-<p class="p14"><span class="s1">© 2026 David Gersdorf · Sawvy</span></p>
+<p>
+Das Feedback wird <strong>ohne Bezug zu deinem Gerät oder deiner Person</strong> gespeichert. Wir können es
+niemandem zuordnen. Bei der Übertragung verarbeitet Google technisch bedingt die IP-Adresse deines Geräts;
+sie wird nicht zusammen mit dem Feedback gespeichert.
+</p>
+<p class="hint">
+Bitte gib im Feedback keine persönlichen Angaben wie Name, E-Mail-Adresse oder Telefonnummer ein.
+</p>
+<ul>
+  <li><strong>Zweck:</strong> Fehler finden und Sawvy weiterentwickeln.</li>
+  <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO; unser berechtigtes Interesse liegt in der Verbesserung der App anhand von Rückmeldungen.</li>
+  <li><strong>Speicherort:</strong> Rechenzentrum der Google Cloud in Frankfurt am Main (europe-west3).</li>
+  <li><strong>Speicherdauer:</strong> Feedback wird gelöscht, sobald es für die Weiterentwicklung der App nicht mehr benötigt wird.</li>
+  <li><strong>Löschung:</strong> Da das Feedback keiner Person zugeordnet werden kann, ist eine gezielte Löschung auf Anfrage nur möglich, wenn du uns den genauen Wortlaut und den ungefähren Zeitpunkt nennst.</li>
+</ul>
+
+<h3>6. Schutz vor Missbrauch (Firebase App Check / Play Integrity)</h3>
+<p>
+Damit nur die echte Sawvy-App Feedback senden kann, nutzen wir <strong>Firebase App Check</strong> mit der
+<strong>Play Integrity API</strong> von Google. Dabei prüft Google, ob die Anfrage von einer unveränderten
+Sawvy-Installation auf einem Android-Gerät stammt, und stellt ein kurzlebiges Prüf-Token aus. Die
+Prüfdaten werden von Firebase App Check nicht dauerhaft gespeichert; das Token ist höchstens sieben Tage gültig.
+</p>
+<ul>
+  <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO; unser berechtigtes Interesse liegt im Schutz der Feedback-Funktion vor automatisiertem Missbrauch.</li>
+</ul>
+
+<h3>7. App-Bewertung im Play Store</h3>
+<p>
+Sawvy kann dich nach einiger Nutzung einmalig bitten, die App zu bewerten. Dafür wird der Bewertungsdialog
+von Google Play angezeigt. Deine Bewertung geht direkt an Google Play; Sawvy erhält davon keine Daten.
+</p>
+
+<h3>8. Übersicht der verarbeiteten Daten</h3>
+<ul>
+  <li><strong>Nur lokal auf dem Gerät:</strong> Projekte, Bretter, Teile, Lagerbestand, Einstellungen</li>
+  <li><strong>Beim Kauf (RevenueCat, Google Play):</strong> Kaufstatus, Kaufnachweis, anonyme Nutzerkennung</li>
+  <li><strong>Nur mit Einwilligung (Crashlytics):</strong> Absturzprotokolle, technische Gerätedaten, Installationskennung</li>
+  <li><strong>Nur wenn du Feedback sendest (Firestore):</strong> Nachrichtentext, Zeitpunkt, App-Version</li>
+  <li><strong>Zur Absicherung des Feedbacks (App Check):</strong> Integritätsprüfung durch Google Play</li>
+  <li><strong>Systemseitig, abschaltbar (Android-Sicherung):</strong> App-Daten im eigenen Google-Konto</li>
+  <li><strong>Nicht erhoben:</strong> Name, E-Mail-Adresse, Telefonnummer, Standort, Kontakte, Werbe-IDs</li>
+</ul>
+
+<h3>9. Berechtigungen der App</h3>
+<ul>
+  <li><strong>INTERNET:</strong> für die Kaufprüfung über Google Play und RevenueCat, für Absturzberichte (nur mit Einwilligung), für das Senden von Feedback und dessen Absicherung über App Check.</li>
+</ul>
+<p>Weitere Berechtigungen wie Kamera, Standort oder Kontakte werden nicht angefordert.</p>
+
+<h3>10. Empfänger</h3>
+<p>
+Daten werden nur an die oben genannten Dienstleister übermittelt, die in unserem Auftrag tätig sind:
+Google (Google Play, Firebase Crashlytics, Cloud Firestore, App Check) und RevenueCat.
+Eine Weitergabe zu Werbezwecken findet nicht statt.
+</p>
+
+<h3>11. Datenlöschung</h3>
+<p>
+Alle lokal gespeicherten Daten werden gelöscht, wenn du die App deinstallierst. Einzelne Projekte kannst du
+jederzeit in der App löschen. Ist die automatische Sicherung von Android aktiv, bleibt eine Kopie in deinem
+Google-Konto erhalten und wird bei einer Neuinstallation zurückgespielt; diese Sicherung löschst du unter
+Einstellungen → Google → Sicherung.
+</p>
+<p>
+Deine Einwilligung zu Absturzberichten kannst du jederzeit in den App-Einstellungen widerrufen.
+Für Daten, die RevenueCat im Zusammenhang mit deinem Kauf gespeichert hat, wende dich an
+<a href="mailto:gdapps@proton.me">gdapps@proton.me</a>.
+</p>
+
+<h3>12. Deine Rechte</h3>
+<p>
+Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17),
+Einschränkung der Verarbeitung (Art. 18) und Datenübertragbarkeit (Art. 20). Soweit eine Verarbeitung auf
+deiner Einwilligung beruht, kannst du diese jederzeit mit Wirkung für die Zukunft widerrufen
+(Art. 7 Abs. 3 DSGVO).
+</p>
+<p>
+<strong>Widerspruchsrecht:</strong> Soweit wir Daten auf Grundlage berechtigter Interessen verarbeiten
+(Art. 6 Abs. 1 lit. f DSGVO), kannst du dieser Verarbeitung aus Gründen, die sich aus deiner besonderen
+Situation ergeben, jederzeit widersprechen (Art. 21 DSGVO).
+</p>
+<p>
+<strong>Beschwerderecht:</strong> Du kannst dich bei einer Datenschutz-Aufsichtsbehörde beschweren
+(Art. 77 DSGVO). Für uns zuständig ist die Sächsische Datenschutz- und Transparenzbeauftragte,
+Devrientstraße 5, 01067 Dresden.
+</p>
+<p>
+Anfragen richtest du an <a href="mailto:gdapps@proton.me">gdapps@proton.me</a>.
+</p>
+
+<h3>13. Änderungen</h3>
+<p>
+Wir passen diese Datenschutzerklärung an, wenn sich die App oder die rechtlichen Anforderungen ändern.
+Es gilt die jeweils hier veröffentlichte Fassung; das Datum der letzten Änderung steht oben.
+</p>
+</section>
+
+<!-- ============================ ENGLISH ============================ -->
+<section class="lang" id="en" lang="en">
+<h2>ENGLISH</h2>
+
+<h3>1. Controller</h3>
+<p>
+David Gersdorf, DaveO Studio<br>
+Seminarstraße 7<br>
+01067 Dresden<br>
+Germany<br>
+Email: <a href="mailto:gdapps@proton.me">gdapps@proton.me</a>
+</p>
+
+<h3>2. Principle: your projects stay on your device</h3>
+<p>
+All project data you enter in Sawvy – projects, boards, parts, stock and settings – is stored exclusively
+on your device. Sawvy does not transmit this content to its own or any third-party servers. Sawvy requires
+no account and no registration.
+</p>
+<p>
+Data is transmitted only in the following clearly defined cases: when you purchase Sawvy Pro (Section 3),
+for crash reports with your consent (Section 4), when you voluntarily send feedback (Section 5), and to
+protect that feedback feature (Section 6).
+</p>
+<p>
+Independently of this, depending on your system settings, Android may back up the app's data to your
+personal Google account via the "Automatic backup" feature. This backup is performed by the operating
+system, not by Sawvy, and is subject to Google's terms. You can disable it system-wide under
+Settings → Google → Backup.
+</p>
+
+<h3>3. In-app purchases (Google Play and RevenueCat)</h3>
+<p>
+Purchases of Sawvy Pro are processed through the <strong>Google Play Store</strong>
+(Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland). We do not receive payment data.
+</p>
+<p>
+To verify and manage your purchase, we use <strong>RevenueCat</strong>
+(RevenueCat, Inc., 633 Tasman St, San Leandro, CA 94577, USA). The following data is processed: the purchase
+status or purchase history for Sawvy Pro, the purchase token from Google Play, and a randomly generated,
+anonymous user identifier that RevenueCat assigns to the app installation. RevenueCat does not receive your
+name, email address or payment data from Sawvy.
+</p>
+<ul>
+  <li><strong>Purpose:</strong> verifying a valid purchase and unlocking Sawvy Pro, including after reinstallation ("Restore purchase").</li>
+  <li><strong>Legal basis:</strong> Art. 6(1)(b) GDPR (performance of the purchase contract).</li>
+  <li><strong>Retention:</strong> as long as necessary to manage your purchase; beyond that only where statutory retention obligations apply.</li>
+  <li><strong>Transfer to third countries:</strong> RevenueCat processes data in the USA. The transfer is based on the EU-U.S. Data Privacy Framework or EU Standard Contractual Clauses (Art. 46(2)(c) GDPR).</li>
+</ul>
+<p>
+RevenueCat privacy policy: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a><br>
+Google privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>
+</p>
+
+<h3>4. Crash reporting (Firebase Crashlytics)</h3>
+<p>
+Sawvy uses <strong>Firebase Crashlytics</strong> (Google Ireland Limited, Gordon House, Barrow Street,
+Dublin 4, Ireland) to detect crashes and improve app stability.
+</p>
+<p>
+Crashlytics is <strong>disabled by default</strong> and only becomes active once you explicitly consent on
+first launch. If you consent, the following technical data is transmitted when a crash occurs:
+</p>
+<ul>
+  <li>error logs (stack traces) and the state of the app at the time of the crash</li>
+  <li>device model, operating system version, app version and other technical device data (e.g. memory, storage)</li>
+  <li>a randomly generated installation identifier (Crashlytics installation UUID and Firebase installation ID), used to count how many installations are affected by an error</li>
+</ul>
+<p>
+Your project content (measurements, labels, boards, parts) is <strong>not</strong> collected.
+</p>
+<ul>
+  <li><strong>Legal basis:</strong> your consent under Art. 6(1)(a) GDPR and Section 25(1) TDDDG.</li>
+  <li><strong>Withdrawal:</strong> at any time in the app settings under "Share crash reports", with effect for the future.</li>
+  <li><strong>Retention:</strong> according to Google, crash data and associated identifiers are kept for 90 days before deletion begins.</li>
+  <li><strong>Transfer to third countries:</strong> Google may also process data in the USA. Google LLC is certified under the EU-U.S. Data Privacy Framework.</li>
+</ul>
+
+<h3>5. Feedback (Firebase Cloud Firestore)</h3>
+<p>
+Via "Send feedback" you can voluntarily send us a message. For this we use Google's
+<strong>Cloud Firestore</strong> as a data processor. Only the following is stored:
+</p>
+<ul>
+  <li>your message text</li>
+  <li>the time of receipt</li>
+  <li>the app version</li>
+</ul>
+<p>
+Feedback is stored <strong>without any link to your device or your person</strong>. We cannot attribute it to
+anyone. During transmission, Google technically processes your device's IP address; it is not stored with
+the feedback.
+</p>
+<p class="hint">
+Please do not include personal details such as your name, email address or phone number in your feedback.
+</p>
+<ul>
+  <li><strong>Purpose:</strong> finding bugs and improving Sawvy.</li>
+  <li><strong>Legal basis:</strong> Art. 6(1)(f) GDPR; our legitimate interest is improving the app based on user feedback.</li>
+  <li><strong>Storage location:</strong> Google Cloud data center in Frankfurt am Main, Germany (europe-west3).</li>
+  <li><strong>Retention:</strong> feedback is deleted once it is no longer needed for developing the app.</li>
+  <li><strong>Deletion:</strong> since feedback cannot be attributed to a person, targeted deletion on request is only possible if you tell us the exact wording and the approximate time.</li>
+</ul>
+
+<h3>6. Abuse protection (Firebase App Check / Play Integrity)</h3>
+<p>
+To ensure that only the genuine Sawvy app can send feedback, we use <strong>Firebase App Check</strong> with
+Google's <strong>Play Integrity API</strong>. Google checks whether the request comes from an unmodified Sawvy
+installation on an Android device and issues a short-lived verification token. Firebase App Check does not
+permanently store the verification data; the token is valid for at most seven days.
+</p>
+<ul>
+  <li><strong>Legal basis:</strong> Art. 6(1)(f) GDPR; our legitimate interest is protecting the feedback feature against automated abuse.</li>
+</ul>
+
+<h3>7. App rating in the Play Store</h3>
+<p>
+After some use, Sawvy may ask you once to rate the app. The Google Play rating dialog is shown for this.
+Your rating goes directly to Google Play; Sawvy receives no data from it.
+</p>
+
+<h3>8. Overview of processed data</h3>
+<ul>
+  <li><strong>Only on your device:</strong> projects, boards, parts, stock, settings</li>
+  <li><strong>When purchasing (RevenueCat, Google Play):</strong> purchase status, purchase token, anonymous user identifier</li>
+  <li><strong>Only with consent (Crashlytics):</strong> crash logs, technical device data, installation identifier</li>
+  <li><strong>Only when you send feedback (Firestore):</strong> message text, time, app version</li>
+  <li><strong>To protect feedback (App Check):</strong> integrity check by Google Play</li>
+  <li><strong>System-level, can be disabled (Android backup):</strong> app data in your own Google account</li>
+  <li><strong>Not collected:</strong> name, email address, phone number, location, contacts, advertising IDs</li>
+</ul>
+
+<h3>9. App permissions</h3>
+<ul>
+  <li><strong>INTERNET:</strong> for purchase verification via Google Play and RevenueCat, for crash reports (only with consent), and for sending feedback and protecting it via App Check.</li>
+</ul>
+<p>No other permissions such as camera, location or contacts are requested.</p>
+
+<h3>10. Recipients</h3>
+<p>
+Data is only transmitted to the service providers named above, acting on our behalf:
+Google (Google Play, Firebase Crashlytics, Cloud Firestore, App Check) and RevenueCat.
+Data is not passed on for advertising purposes.
+</p>
+
+<h3>11. Data deletion</h3>
+<p>
+All locally stored data is deleted when you uninstall the app. You can delete individual projects in the app
+at any time. If Android's automatic backup is active, a copy remains in your Google account and is restored on
+reinstallation; you can delete that backup under Settings → Google → Backup.
+</p>
+<p>
+You can withdraw your consent to crash reporting at any time in the app settings.
+For data stored by RevenueCat in connection with your purchase, contact
+<a href="mailto:gdapps@proton.me">gdapps@proton.me</a>.
+</p>
+
+<h3>12. Your rights</h3>
+<p>
+You have the right of access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction of
+processing (Art. 18) and data portability (Art. 20). Where processing is based on your consent, you may
+withdraw it at any time with effect for the future (Art. 7(3) GDPR).
+</p>
+<p>
+<strong>Right to object:</strong> Where we process data based on legitimate interests (Art. 6(1)(f) GDPR),
+you may object to this processing at any time on grounds relating to your particular situation (Art. 21 GDPR).
+</p>
+<p>
+<strong>Right to lodge a complaint:</strong> You may lodge a complaint with a data protection supervisory
+authority (Art. 77 GDPR). The authority responsible for us is the Saxon Data Protection and Transparency
+Commissioner (Sächsische Datenschutz- und Transparenzbeauftragte), Devrientstraße 5, 01067 Dresden, Germany.
+</p>
+<p>
+Please send requests to <a href="mailto:gdapps@proton.me">gdapps@proton.me</a>.
+</p>
+
+<h3>13. Changes</h3>
+<p>
+We update this privacy policy when the app or legal requirements change. The version published here applies;
+the date of the last change is shown at the top.
+</p>
+</section>
+
+<footer>© 2026 David Gersdorf · DaveO Studio · Sawvy</footer>
+
+</main>
 </body>
 </html>
